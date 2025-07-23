@@ -1,0 +1,5 @@
+com\videoplayer\model\VideoFile.class
+com\videoplayer\controller\HistoryController.class
+com\videoplayer\service\VideoPlayerService.class
+com\videoplayer\controller\VideoPlayerController.class
+com\videoplayer\VideoPlayerApp.class

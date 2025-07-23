@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.media.MediaView?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.videoplayer.controller.VideoPlayerController">
+
+    <top>
+        <MenuBar>
+            <Menu text="File">
+                <MenuItem fx:id="openFileMenuItem" text="Open Video" onAction="#handleOpenFile"/>
+            </Menu>
+            <Menu text="History">
+                <MenuItem fx:id="historyMenuItem" text="View History"/>
+            </Menu>
+        </MenuBar>
+    </top>
+
+    <left>
+        <VBox spacing="5" style="-fx-padding: 10px;">
+            <ListView fx:id="historyListView" prefWidth="200" />
+        </VBox>
+    </left>
+
+    <center>
+        <MediaView fx:id="mediaView" fitHeight="400" fitWidth="600"/>
+    </center>
+
+    <bottom>
+        <HBox alignment="center" spacing="20" style="-fx-padding: 10px;">
+            <Button fx:id="playButton" text="Play" onAction="#handlePlay"/>
+            <Button fx:id="pauseButton" text="Pause" onAction="#handlePause"/>
+        </HBox>
+    </bottom>
+</BorderPane>

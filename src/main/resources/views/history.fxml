@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.videoplayer.controller.HistoryController">
+    <center>
+        <ListView fx:id="historyListView" />
+    </center>
+    <bottom>
+        <HBox alignment="center" spacing="10" style="-fx-padding: 10px;">
+            <Button fx:id="backButton" text="Back to Player" onAction="#handleBack" />
+        </HBox>
+    </bottom>
+</BorderPane>
